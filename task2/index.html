@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="container__child left">
+        <form action="" name="form1">
+          <span>Баланс</span>
+          <input type="text" value="1000 грн" class="balance" />
+          <span>Пиво</span>
+          <input type="text" value="100 шт" class="beer" />
+          <span>Вино</span>
+          <input type="text" value="50 шт" class="vine" />
+          <span>Пепсі</span>
+          <input type="text" value="80 шт" class="pepsi" />
+        </form>
+      </div>
+      <div class="container__child mid">
+        <form action="" name="form2">
+          <span>Кількість</span>
+          <input type="text" id="addAmount" />
+          <div class="checkboxContainer">
+            <input type="checkbox" id="beer" name="drinks" />
+            <label for="beer">Пиво</label>
+            <input type="checkbox" id="vine" name="drinks" />
+            <label for="vine">Вино</label>
+            <input type="checkbox" id="pepsi" name="drinks" />
+            <label for="pepsi">Пепсі</label>
+          </div>
+          <input type="button" value="Додати" id="add" class="btnHover" />
+          <div id="area"></div>
+          <input type="button" value="Купити" id="buy" disabled />
+        </form>
+      </div>
+      <div class="container__child right"></div>
+      <div class="alert">
+        <div class="x">X</div>
+        <div class="alertMessage"></div>
+        <input type="button" value="Close" class="close" />
+      </div>
+    </div>
+    <script src="shop.js" type="module"></script>
+    <script src="main.js" type="module"></script>
+	// ]]>
+</script></body>
+</html>
